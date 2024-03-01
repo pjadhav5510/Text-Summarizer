@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+    <meta property="og:image" content="../static/img/thumbnail.png" />
+     <meta property="og:type" content="website" />
+     <meta property="og:url" content="https://abridgedpro.pythonanywhere.com/" />
+     <meta property="og:title" content="Abridged." />
+     <meta property="og:description" content="Summarize The Text Without Wasting Your Precious Time!" />
+
+    <title>ABRIDGED.</title>
+
+     <!-- Favicons -->
+    <link href="{{ url_for('static',filename='img/abridged.ico') }}" rel=" icon" type="image/x-icon"  />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@600&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap CSS File -->
+    <link
+      href="{{ url_for('static',filename='lib/bootstrap/css/bootstrap.min.css') }}"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries CSS Files -->
+    <link
+      href="{{ url_for('static',filename='lib/font-awesome/css/font-awesome.min.css') }}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static',filename='lib/animate/animate.min.css') }}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static',filename='lib/ionicons/css/ionicons.min.css') }}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static',filename='lib/owlcarousel/assets/owl.carousel.min.css') }}"
+      rel="stylesheet"
+    />
+
+    <link
+      href="{{ url_for('static',filename='lib/lightbox/css/lightbox.min.css') }}"
+      rel="stylesheet"
+    />
+
+    <!-- Main Stylesheet File -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='styles/style.css') }}"
+    />
+
+    <!-- =======================================================
+    Theme Name: Rapid
+    Theme URL: https://bootstrapmade.com/rapid-multipurpose-bootstrap-business-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+  </head>
+
+  <body>
+    <!--==========================
+  Header
+  ============================-->
+    <header id="header">
+
+      <div class="container">
+        <div class="logo float-left">
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <h1>
+            <a href="#intro" class="scrollto"><span style="color: #3498DB; font-weight: bold;">Abridged.</span></a>
+          </h1>
+          <!-- <a href="#header" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a> -->
+        </div>
+
+        <nav class="main-nav float-right d-none d-lg-block">
+          <ul>
+            <li class="active"><a name="home" href="#intro">Home</a></li>
+            <li><a name="services" href="#services">Services</a></li>
+            <li><a name="team" href="#team">Team</a></li>
+          </ul>
+        </nav>
+        <!-- .main-nav -->
+      </div>
+    </header>
+    <!-- #header -->
+
+    <!--==========================
+    Intro Section
+  ============================-->
+    <section id="intro" class="clearfix">
+      <div class="container d-flex h-100">
+        <div class="row justify-content-center align-self-center">
+          <div class="col-md-6 intro-info order-md-first order-last">
+            <h2>Instant Summarization<br />Of Your <span>Text!</span></h2>
+            <div>
+              <a href="#services" name="getstarted" class="btn-get-started scrollto"
+                >Get Started</a
+              >
+            </div>
+          </div>
+
+          <div class="col-md-6 intro-img order-md-last order-first">
+            <img
+              src="{{ url_for('static',filename='img/document.svg') }}"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- #intro -->
+
+    <main id="main">
+
+      <!--==========================
+      Services Section
+    ============================-->
+      <section id="services" class="section-bg">
+        <div class="container">
+          <header class="section-header">
+            <h3 style="color: #fff;">Services</h3>
+            <p>
+
+            </p>
+          </header>
+
+          <div class="row">
+            <div
+              class="col-md-6 col-lg-6 wow bounceInUp"
+              data-wow-duration="1.4s"
+            >
+              <div class="box">
+                <div class="icon" style="background: #EAEDED;">
+                   <i
+                    class="ion-search"
+                    style="color: #3498DB;"
+                  ></i>
+                </div>
+                <h4 class="title">
+                  <a name="urlinput" href="url">Enter URL to Summarize a webpage</a>
+                </h4>
+                <p class="description">
+
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-md-6 col-lg-6 wow bounceInUp"
+              data-wow-duration="1.4s"
+            >
+              <div class="box">
+                <div class="icon" style="background: #EAEDED;">
+                  <i
+                    class="ion-ios-copy"
+                    style="color: #3498DB;"
+                  ></i>
+                </div>
+                <h4 class="title">
+                  <a href="home">Copy-paste to Summarize a text</a>
+                </h4>
+                <p class="description">
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #services -->
+
+
+      <!--==========================
+      Team Section
+    ============================-->
+     <section id="team">
+      <div class="container">
+        <div class="section-header">
+          <h3>Team</h3>
+          <p></p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp">
+            <div class="member">
+              <img src="{{ url_for('static',filename='img/pratik.jpg') }}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Pratik Shindekar</h4>
+                  <div class="social">
+                    <a name="psinsta" href="https://www.instagram.com/pratikshindekar/"><i class="fa fa-instagram"></i></a>
+                    <a name="pslinked" href="https://www.linkedin.com/in/pratikshindekar/"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="member">
+              <img src="{{ url_for('static',filename='img/chaitanya.jpg') }}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Chaitanya Taru</h4>
+                  <div class="social">
+                    <a name="ctinsta" href="https://www.instagram.com/_nikhiltaru_/"><i class="fa fa-instagram"></i></a>
+                    <a name="ctlinked" href="https://www.linkedin.com/in/chaitanyataru/"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="member">
+              <img src="{{ url_for('static',filename='img/piyush.jpg') }}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Piyush Jadhav</h4>
+                  <div class="social">
+                    <a name="pjinsta" href="https://www.instagram.com/__piyush_jadhav_/"><i class="fa fa-instagram"></i></a>
+                    <a name="pjlinked" href="https://www.linkedin.com/in/piyush--jadhav/"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="member">
+              <img src="{{ url_for('static',filename='img/rasika.jpg') }}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Rasika Dhadphale</h4>
+                  <div class="social">
+                    <a name="rdinsta" href="https://www.instagram.com/t.a.s.m.a.i/"><i class="fa fa-instagram"></i></a>
+                    <a name="rdlinked" href="https://www.linkedin.com/in/rasikadhadphale/"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+      <!-- #team -->
+
+
+    </main>
+
+    <!--==========================
+    Footer
+  ============================-->
+    <footer id="footer" style="background-color: #3498DB;">
+
+
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright 2020 <strong>ABRIDGED</strong>.
+        </div>
+      </div>
+    </footer>
+    <!-- #footer -->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <!-- Uncomment below i you want to use a preloader -->
+    <!-- <div id="preloader"></div> -->
+
+    <!-- JavaScript Libraries -->
+    <script src="{{ url_for('static',filename='lib/jquery/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='lib/jquery/jquery-migrate.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='lib/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='lib/easing/easing.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='lib/mobile-nav/mobile-nav.js') }}"></script>
+    <script src="{{ url_for('static',filename='lib/wow/wow.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='lib/waypoints/waypoints.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='lib/counterup/counterup.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='lib/owlcarousel/owl.carousel.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='lib/isotope/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='lib/lightbox/js/lightbox.min.js') }}"></script>
+
+    <!-- Contact Form JavaScript File -->
+    <script src="{{ url_for('static',filename='contactform/contactform.js') }}"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="{{ url_for('static',filename='js/main.js') }}"></script>
+  </body>
+</html>

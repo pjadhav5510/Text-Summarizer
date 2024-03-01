@@ -1,0 +1,21 @@
+.container-fluid{
+    margin-top: 12%;
+    margin-bottom: 8%;
+    padding: 5%;
+    text-align: center;
+}
+
+.btn{
+    margin-top: 5%;
+}
+
+
+@media (max-width: 991px) {
+    .container-fluid{
+        margin-top: 65%;
+        margin-bottom: 25%;
+        padding: 5%;
+        text-align: center;
+    }
+}
+
